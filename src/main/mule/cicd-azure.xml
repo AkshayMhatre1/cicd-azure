@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="cicd-azureFlow" doc:id="af4dc17c-8acd-484b-be45-2510987f0796" >
-		<http:listener doc:name="Listener" doc:id="d682ffae-c77c-4d9e-9847-b36dcb66c716" config-ref="HTTP_Listener_config" path="/test"/>
+		<http:listener doc:name="Listener" doc:id="d682ffae-c77c-4d9e-9847-b36dcb66c716" config-ref="HTTP_Listener_config" path="/test1"/>
 		<ee:transform doc:name="Transform Message" doc:id="4fed4387-a0a5-436b-8367-5e6db0d94f29" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
